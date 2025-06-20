@@ -8,6 +8,20 @@
         span{
             color: red;
         }
+        .row{
+            margin: 5px;
+        }
+        label{
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding: 5px;
+        }
+        fieldset{
+            margin: 15px 0;
+            border-radius: 10px;
+            border-color: rgb(245, 239, 239);
+        }
     </style>
 </head>
 <body>
@@ -57,6 +71,48 @@
 
     <h1><p>DIO<span>.</span>me</p></h1> <blockquote>utilizando da tag span acima</blockquote>
     <h1>Utilizando da tag fieldset </h1>
+    <h2>Formulário de cadastro</h2>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="row">
+             <label>Nome:</label><input type="text"/>
+             <label>E-mail:</label><input type="text"/>
+        </div>
+        <div class="row">
+             <label>Profissão:</label><input type="text"/>
+             <label>Empresa:</label><input type="text"/>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Endereço</legend>
+        <div class="row">
+            <label>Endereço:</label><input type="text"/>
+            <label>Numero:</label><input style="width: 30px;" type="text" width="10">
+        </div>
+        <div class="row">
+            <label>Bairro:</label><input type="text"/>
+            <label>Cidade/UF:</label><input type="text"/>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Contatos</legend>
+        <div class="row">
+            <label>Celular:</label><input type="text"/>
+            <label>WhatsApp:</label><input type="text"/>
+        </div>
+        <div class="row">
+            <label>Linkedin:</label><input type="text"/>
+            <label>GitHub:</label><input type="text"/>
+        </div>
+    </fieldset>
+    <div class="row">
+        <button type="reset">
+            Limpar
+        </button>
+        <button type="submit">
+            Enviar Formulário
+        </button>
+    </div>
 
 </body>
 </html>
