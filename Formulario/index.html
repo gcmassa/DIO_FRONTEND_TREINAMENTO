@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceitos de Formularios</title>
+</head>
+<body>
+    <h1>Exemplos de Formulários</h1>
+    <h2>Signup</h2>
+    <form name="signup" onsubmit="alert('Envie o formulario')" target="_blank" autocomplete="off" method="post" action="https://servidor.com.br/signup">
+        Nome: <input type="text" name="name" ><br>
+        Idade: <input type="number" name="age"><br>
+        Senha: <input type="password" name="password"><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <br>
+    <h2>Recurso de Inputs</h2>
+    <form action="inputs">
+        <label>[TEXT]</label><input type="text"/><br>
+        <label>[NUMBER]</label><input type="number" min="0" max="99"/><br>
+        <label>[BUTTON]</label><input type="button" value="Enviar"/><br>
+        <label>[RANGE]</label><input type="range" min="0" max="100"/><br>
+        <label>[COLOR]</label><input type="color"/><br>
+        <label>[EMAIL]</label><input type="email"><br>
+        <label>[URL]</label><input type="url"><br>
+        <label>[DATE]</label><input type="date"><br>
+        <label>[WEEK]</label><input type="week"><br>
+        <label>[MONTH]</label><input type="month"><br>
+        <label>[CHECKBOX]</label><input type="checkbox"><br>
+        <label>[RARIOBUTTON]</label><input type="radio" name="TRUE"><input type="radio" name="TRUE"/><br>
+        <label>[HIDDEN]</label><input type="hidden"><br>
+        <label>[FILE]</label><input type="file" multiple><br>
+        <label>[SEARCH]</label><input type="search"><br>
+    </form>
+    <h2>Recursos com Checkbox e Radio Button</h2>
+    <form action="pizza" method="get">
+        <h3>Você selecionou: Pizza de Calabresa</h3>
+        <p>Quais Opcionais você deseja?</p>
+        <input type="checkbox" disabled name="opcional[]" value="queijo"> + queijo <br>
+        <input type="checkbox" name="opcional[]" value="calabresa"> + calabresa <br>
+        <input type="checkbox" name="opcional[]" value="cebola"> + cebola <br>
+        <input type="checkbox" name="opcional[]" value="azeitona"> + azeitona <br>
+        <p>Borda Recheada?</p>
+        <input type="radio" name="Borda" value="SIM"> SIM <br>
+        <input type="radio" name="Borda" value="NAO"> NÃO <br>
+        <p>Bebida?</p>
+        <input type="radio" name="Bebida" value="Suco"> Suco <br>
+        <input type="radio" name="Bebida" value="Refrigerante"> Refrigerante <br>
+        <input type="radio" name="Bebida" value="Agua"> Água <br>
+        <input type="radio" name="Bebida" value="Nenhum"> Nenhum <br>
+        <button type="submit">Confirmar o Pedido</button>
+    </form>
+    <h2>TAG Button e seus tipos</h2>
+    <form action="Botoes" method="get">
+        <label>Nome:</label><input type="text" name="name"><br>
+        <label>Idade:</label><input type="number" name="age"><br>
+        <label>Password</label><input type="password" name="password"><br>
+
+        <button type="button" onclick="alert('Cliquei no Botão')">Clicável</button><br>
+        <button type="reset">Limpar</button><br>
+        <button type="submit">Enviar</button><br>
+    </form>
+    <h2>TAG Select e seus tipos</h2>
+    <form method="get">
+        <label>Nome:</label><input type="text" name="name"><br>
+        <label>Cargo:</label>
+        <select name="role">
+            <option value="">Selecione o Cargo</option>
+            <option value="Administrativo">Administrativo</option>
+            <option value="Gerente">Gerente</option>
+            <option value="Diretor">Diretor</option>
+            <option value="Presidente">Presidente</option>
+        </select>
+        <br>
+        <label>Assunto:</label><br>
+        <select name="info" multiple>
+            <option value="Urgente">Urgente</option>
+            <option value="Financeiro">Financeiro</option>
+            <option value="Reuniao">Reunião</option>
+        </select>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    <h2>Recursos com TEXTAREA</h2>
+    <form>
+        <label>Nome:</label><input type="text" name="name"><br>
+        <label>Cargo:</label>
+        <select name="role">
+            <option value="">Selecione o Cargo</option>
+            <option value="Administrativo">Administrativo</option>
+            <option value="Gerente">Gerente</option>
+            <option value="Diretor">Diretor</option>
+            <option value="Presidente">Presidente</option>
+        </select>
+        <br>
+        <label>Assunto:</label><br>
+        <select name="info" multiple>
+            <option value="Urgente">Urgente</option>
+            <option value="Financeiro">Financeiro</option>
+            <option value="Reuniao">Reunião</option>
+        </select>
+        <br>
+        <label>Mensagem:</label><textarea name="Mensagem" rows="10" cols="50"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
