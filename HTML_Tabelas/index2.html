@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando uma Tabela usando CSS</title>
+    <style>
+        table{
+            -webkit-box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+            box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+        }
+        table thead th{
+            background-color: black;
+            color: white;
+        }
+        table tfoot td{
+            background-color: lightgray;
+        }
+        table tbody tr:nth-child(even) td{
+            background-color: blanchedalmond;
+        }
+        table tbody tr:hover td{
+            background-color: yellowgreen;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Estilizando uma Tabela usando CSS</h1>
+    <table width="250" align="center" cellspacing="0">
+        <thead>
+            <tr id="0">
+                <th colspan="2">Minha Tabela</th>
+            </tr>
+            <tr id="1">
+                <th title="Nome Completo">Nome</th>
+                <th title="Idade">Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="2">
+                <td>Maria</td>
+                <td>25</td>
+            </tr>
+            <tr id="3">
+                <td>José</td>
+                <td>40</td>
+            </tr>
+            <tr id="4">
+                <td>Yasmin</td>
+                <td>12</td>
+            </tr>
+            <tr id="5">
+                <td>Sofia</td>
+                <td>13</td>
+            </tr>
+            <tr id="6">
+                <td>Breno</td>
+                <td>18</td>
+            </tr>
+            <tr id="7">
+                <td>Alan</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>6</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>
