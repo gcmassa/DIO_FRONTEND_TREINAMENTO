@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5  SEMANTICO</title>
+</head>
+<style>
+    blockquote {
+        background-color: lightgray;
+        padding: 20px;
+        margin-left: 0px;
+        border-left: red solid 5px;
+
+    }
+    article time {
+        font-style: italic;
+    }
+    article q {
+        font-style: italic;
+    }
+</style>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <article><!-- destinado para colocar o artigo -->
+            <p>Qual o seu prato favorito?</p>
+            <article><!--quando tem outra tag article dentro de outro, semanticamente um se encontra relacionado com outro-->
+                <p>É churrasco!</p>
+                <p>Currascaria Boi grande<q> a melhor churrascaria do mundo</q></p>
+            </article>
+        </article>
+        <article>
+            <h1>Descoberta de vida em outro planeta</h1>
+            <p>Artigo publicado em <time pubdate>21/01/1950 19:00</time></p>
+            <p>asdasdasdsadasdasd sasasda asdasd asdasd</p>
+            <p>asdasdasdsadasdasd sasasda asdasd asdasd</p>
+            <p>asdasdasdsadasdasd sasasda Estrela Nova</p>
+            <blockquote cite="http://#"><!-- fazendo um citação colocando o link de um fonte de informação-->
+                Estrela Nova - é uma estrela nova
+            </blockquote>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML SEMANTICO - HTML 5 Estrutural</title>
+    <style>
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+        }
+        nav ul a {
+            padding: 10px 15px;
+            color: blue;
+            text-decoration: none;
+            border-radius: 15px 0;
+        }
+        nav ul li a:hover {
+            color: white;
+            background: blue;
+        }
+    </style><!-- a formatação e estilização fica para o CSS e o HTML fica com a estrutura da pagina-->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Lista 1</a></li>
+                <li><a href="#">Lista 2</a></li>
+                <li><a href="#">Lista 3</a></li>
+            </ul>
+        </nav>
+
+    </header>
+<!-- Não pode haver dois <main> na mesma página, os elementos header e footer pode conter dentro do main, <main> define o conteudo principal de sua página -->
+    <main>
+        <section>
+            <header></header>
+            <footer></footer>
+        </section>
+        <section></section><!-- Assuntos que pode ser definidos por seções-->
+
+        <aside></aside><!-- utilizando para assuntos secundários-->
+
+    </main>
+    <footer>
+        <address>R. teste 12345</address>
+        <nav></nav><!-- geralmente utilinado como navegação de links para rodapé normamente utilizando em uma lista não ordenada<ul>-->
+    </footer>
+    
+</body>
+</html>
+<!-- Mais detalhes acessar site MDN WEB DOCS -->

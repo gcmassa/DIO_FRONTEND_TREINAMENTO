@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 SEMANTICO - IMAGES</title>
+</head>
+<body>
+    <h1>SEMANTICO</h1>
+    <h2>TAG figure</h2>
+    <figure>
+        <img src="/HTML_Midias/IMG/Strix_1920x1080.jpg" width="250">
+        <figcaption>Descrição da imagem acima</figcaption>
+    </figure>
+    <br>
+    <h2>TAG picture</h2>
+    <picture>
+        <source srcset="/HTML_Midias/IMG/Strix_1920x1080.jpg" media="(min-width: 600px)">
+        <img src="/HTML_Midias/IMG/Strix_1920x1080.jpg" width="700">
+    </picture>
+    <br>
+    <h1>NÃO SEMANTICO</h1>
+    <img src="/HTML_Midias/IMG/Strix_1920x1080.jpg" width="250">
+    <p>Descrição da imagem acima</p>
+</body>
+</html>
