@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Documentação Explicativa: Evolução do HTML para HTML Semântico</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    article {
+      margin-top: 20px;
+    }
+    blockquote {
+      background-color: #f9f9f9;
+      border-left: 5px solid #ccc;
+      padding: 10px 20px;
+      margin: 20px 0;
+    }
+    nav#indice {
+      background-color: #eef;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 40px;
+    }
+    nav#indice ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    nav#indice li {
+      margin: 8px 0;
+    }
+    nav#indice a {
+      text-decoration: none;
+      color: #2c3e50;
+    }
+    nav#indice a:hover {
+      text-decoration: underline;
+    }
+    .voltar {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📘 Projeto do Desafio Explicando os Fundamentos Apresetandos durante o Curso da Estrutura Não Semântica ao HTML5 Semântico</h1>
+    <p>Este documento apresenta a evolução de um projeto HTML, desde sua estrutura inicial até a adoção de práticas modernas com HTML semântico. Cada parte é explicada com foco em clareza, boas práticas e semântica.</p>
+  </header>
+
+  <nav id="indice">
+    <h2>📑 Índice Navegável</h2>
+    <ul>
+      <li><a href="#parte1">Parte 1 a 3: Estrutura Inicial e Formulários</a></li>
+      <li><a href="#parte4">Parte 4 e 5: Estilização com CSS e Formatação</a></li>
+      <li><a href="#parte7">Parte 7: Tabelas</a></li>
+      <li><a href="#parte6">Parte 6: Mídias</a></li>
+      <li><a href="#parte8">Parte 8: HTML Semântico</a></li>
+      <li><a href="#conclusao">Considerações Finais</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="parte1">
+      <h2>🔹 Parte 1 a 3: Estrutura Inicial e Formulários (HTML Não Semântico)</h2>
+      <article>
+        <h3>📌 Introdução e Títulos</h3>
+        <ul>
+          <li>Uso de <code>&lt;strong&gt;</code>, <code>&lt;i&gt;</code>, <code>&lt;br&gt;</code> e <code>&lt;mark&gt;</code> para estilização direta.</li>
+          <li>Hierarquia de títulos com <code>&lt;h1&gt;</code> e <code>&lt;h2&gt;</code>.</li>
+          <li>Listas ordenadas e não ordenadas com <code>&lt;ol&gt;</code> e <code>&lt;ul&gt;</code>.</li>
+        </ul>
+      </article>
+      <article>
+        <h3>📌 Formulários</h3>
+        <ul>
+          <li>Uso de <code>&lt;form&gt;</code> com diversos tipos de <code>&lt;input&gt;</code>: texto, número, senha, email, data, cor, etc.</li>
+          <li>Botões com <code>type="submit"</code>, <code>reset</code> e <code>button</code>.</li>
+          <li>Campos agrupados com <code>&lt;fieldset&gt;</code> e <code>&lt;legend&gt;</code>.</li>
+        </ul>
+      </article>
+      <p class="voltar"><a href="#indice">🔙 Voltar ao Índice</a></p>
+    </section>
+
+    <section id="parte4">
+      <h2>🎨 Parte 4 e 5: Estilização com CSS e Formatação de Texto</h2>
+      <article>
+        <h3>📌 CSS Interno</h3>
+        <ul>
+          <li>Estilização de <code>.card1</code> e <code>.card2</code> com <code>position</code>, <code>z-index</code> e <code>background-color</code>.</li>
+          <li>Uso de <code>&lt;style&gt;</code> no <code>&lt;head&gt;</code> para aplicar regras CSS.</li>
+        </ul>
+        <h3>📌 Formatação de Texto</h3>
+        <ul>
+          <li>Uso de <code>&lt;b&gt;</code>, <code>&lt;i&gt;</code>, <code>&lt;u&gt;</code>, <code>&lt;mark&gt;</code>, <code>&lt;sup&gt;</code>, <code>&lt;sub&gt;</code>.</li>
+          <li>Uso da tag <code>&lt;font&gt;</code>, que está obsoleta e deve ser substituída por CSS.</li>
+        </ul>
+      </article>
+      <p class="voltar"><a href="#indice">🔙 Voltar ao Índice</a></p>
+    </section>
+
+    <section id="parte7">
+      <h2>📊 Parte 7: Tabelas</h2>
+      <article>
+        <h3>📌 Estrutura de Tabelas</h3>
+        <ul>
+          <li>Uso de <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code> e <code>&lt;th&gt;</code>.</li>
+          <li>Separação semântica com <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code> e <code>&lt;tfoot&gt;</code>.</li>
+          <li>Estilização com <code>:nth-child</code> e <code>:hover</code> para interatividade.</li>
+        </ul>
+      </article>
+      <p class="voltar"><a href="#indice">🔙 Voltar ao Índice</a></p>
+    </section>
+
+    <section id="parte6">
+      <h2>🎥 Parte 6: Mídias</h2>
+      <article>
+        <h3>📌 Imagens, Áudio e Vídeo</h3>
+        <ul>
+          <li><code>&lt;img&gt;</code>: Exibição de imagens com <code>alt</code> e <code>title</code>.</li>
+          <li><code>&lt;audio&gt;</code> e <code>&lt;video&gt;</code>: Inclusão de mídia com <code>&lt;source&gt;</code> e <code>&lt;track&gt;</code>.</li>
+          <li><code>&lt;iframe&gt;</code>: Incorporação de conteúdo externo (YouTube, Google Maps).</li>
+        </ul>
+      </article>
+      <p class="voltar"><a href="#indice">🔙 Voltar ao Índice</a></p>
+    </section>
+
+    <section id="parte8">
+      <h2>🧱 Parte 8: HTML Semântico</h2>
+      <article>
+        <h3>📌 Estrutura Semântica</h3>
+        <ul>
+          <li><code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>: Estrutura clara e organizada.</li>
+          <li><code>&lt;nav&gt;</code>: Navegação principal e secundária.</li>
+          <li><code>&lt;aside&gt;</code>: Conteúdo complementar.</li>
+        </ul>
+        <h3>📌 Conteúdo Semântico</h3>
+        <ul>
+          <li><code>&lt;article&gt;</code>: Blocos de conteúdo independente.</li>
+          <li><code>&lt;time&gt;</code>: Marcação de data e hora.</li>
+          <li><code>&lt;blockquote&gt;</code> e <code>&lt;q&gt;</code>: Citações com fonte.</li>
+        </ul>
+        <h3>📌 Imagens Semânticas</h3
+        <ul>
+          <li><code>&lt;figure&gt;</code> e <code>&lt;figcaption&gt;</code>: Imagem com legenda.</li>
+          <li><code>&lt;picture&gt;</code>: Imagem adaptável a diferentes tamanhos de tela.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="conclusao">
+      <h2>🧠 Considerações Finais: Por que usar HTML Semântico?</h2>
+      <blockquote>
+        A transição do HTML não semântico para o HTML semântico representa um avanço significativo na qualidade, acessibilidade e manutenção de páginas web.
+      </blockquote>
+      <ul
