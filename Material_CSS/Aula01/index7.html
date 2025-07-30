@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha CSS 7</title>
+    <style>
+        /*
+            Combinadores: qual tipo de relação entre 2 seletores.
+            1. Combinador descendente (espaço)
+            2. Combinador filho (>)
+            3. Combinador irmão adjacente (+)
+            4. Combinador irmão em geral (~)
+
+            [SELETOR] [COMBINADOR] [SELETOR]
+        */
+        .fundo-verde span p {
+            background: lightgreen;
+        }
+
+        .fundo-verde p ~ p {
+            background: lightcoral;
+        }
+
+        .fundo-verde p + p {
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="fundo-verde">
+        <p>Elemento 01</p>
+        <p>Elemento 02</p>
+        <span>
+            <p>Elemento 03</p>
+            <p>Elemento 04</p>
+        </span>
+        <p>Elemento 05</p>
+        <p>Elemento 06</p>
+    </div>
+</body>
+</html>

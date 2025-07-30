@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha CSS 6</title>
+    <style>
+        /*
+            Combinadores: qual tipo de relação entre 2 seletores.
+            1. Combinador descendente (espaço)
+            2. Combinador filho (>)
+            3. Combinador irmão adjacente (+)
+            4. Combinador irmão em geral (~)
+
+            [SELETOR] [COMBINADOR] [SELETOR]
+        */
+
+        /* 3. Combinador irmão adjacente */
+        /*div + p {
+            color: tomato;
+        }
+
+        .fundo-verde + p {
+            background: lightgreen;
+        }*/
+
+        /* 4. Combinador irmão em geral */
+        div ~ p {
+            color: tomato;
+        }
+
+        .fundo-verde ~ p {
+            background: lightgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="fundo-verde">
+        <p>Parágrafo 1, dentro da DIV</p>
+        <p>Parágrafo 2, dentro da DIV</p>
+        <span>
+            <p>Parágrafo 3 dentro da DIV, dentro do SPAN</p>
+        </span>
+    </div>
+
+    <p>Parágrafo 4, fora da DIV</p>
+    <p>Parágrafo 5, fora da DIV</p>
+    
+    <div class="fundo-verde">
+        <p>Parágrafo 6, dentro da DIV</p>
+        <p>Parágrafo 7, dentro da DIV</p>
+        <span>
+            <p>Parágrafo 8 dentro da DIV, dentro do SPAN</p>
+        </span>
+    </div>
+    
+    <p>Parágrafo 9, fora da DIV</p>
+    <p>Parágrafo 10, fora da DIV</p>
+    
+    <div class="fundo-azul">
+        <p>Parágrafo 11, dentro da DIV</p>
+        <p>Parágrafo 12, dentro da DIV</p>
+        <span>
+            <p>Parágrafo 13 dentro da DIV, dentro do SPAN</p>
+        </span>
+    </div>
+
+    <p>Parágrafo 14, fora da DIV</p>
+    <p>Parágrafo 15, fora da DIV</p>   
+</body>
+</html>
