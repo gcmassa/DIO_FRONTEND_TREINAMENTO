@@ -1,0 +1,124 @@
+/* link a ser importado */
+/* https://projects.verou.me/css3patterns/ */
+
+div {
+    margin-bottom: 30px;
+    
+}
+
+.exemplo {
+    width: 600px;
+    height: 600px;
+    /*background-color: palevioletred;*/
+    background-image: url(../img/logo-full-DIO.webp), url(../img/codificacao-de-programas-de-computador-no-ecra_53876-138060.jpg);
+    /*background-image: linear-gradient(lightblue, blue);*/
+    /*background-image: radial-gradient(lightblue, blue);*/
+    /*background-image: repeating-linear-gradient(to top, lightblue 0 20px, lightpink 20px 40px);*/
+    /*background-color: #fff;
+    background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;*/
+    /*background-color:#556;
+    background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a),
+    linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+    background-size:80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;*/
+}
+/* Redimensionamento de plano de fundo */
+.exemplo-01 {
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/logo-full-DIO.webp), url(../img/montanha.jpg);
+}
+
+#cover {
+    background-size: cover;
+}
+
+#contain {
+    background-size: contain;
+}
+
+#tamanho {
+    /*background-size: 400px;*/
+    background-size: 10%;
+}
+
+#exemplo-x-y {
+    background-size: 200px 400px;
+}
+
+#exemplo-camadas {
+    background-size: 100px 100% , cover;
+}
+
+/* Repetição de imagem de fundo*/
+
+.exemplo-02 {
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/montanha.jpg);
+    background-size: 120px;
+    border: 1px solid blue;
+}
+
+
+#repeat-x {
+    background-repeat: repeat-x;
+}
+
+#repeat-y {
+    background-repeat: repeat-y;
+}
+
+#space {
+    background-repeat: space;
+}
+
+#round {
+    background-repeat: round;
+}
+
+#no-repeat {
+    background-repeat: no-repeat;
+}
+
+/* Posicionamento de imagens de fundo*/
+
+.exemplo-03 {
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/montanha.jpg);
+    background-size: 120px;
+    border: 1px solid red;
+    background-repeat: no-repeat;
+    background-position: center 40px;
+}
+
+/* Propriedade background-attachment*/
+
+.exemplo-04 {
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/montanha.jpg);
+    background-size: cover;
+    border: 1px solid green;
+    overflow: auto;
+}
+
+#fixed {
+    background-attachment: fixed;
+}
+
+#scroll {
+    background-attachment: scroll;
+}
+
+#local {
+    background-attachment: local;
+}

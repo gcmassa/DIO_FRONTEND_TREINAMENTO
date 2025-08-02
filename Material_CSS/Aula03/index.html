@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Detalhes 01 - Cores</title>
+    <style>
+        /*body {
+            background: red;
+        }
+        li {
+            background: aqua;
+        }
+        #pre-definidas{
+            color: deeppink;
+        }
+        #current-color {
+            background: transparent;
+            color: white;
+        }*/
+        #pre-definidas{
+            color: deeppink;
+        }
+        #current-color {
+            color: orange;
+            border: 2px solid currentColor;
+        }
+        #rgb {
+            color: rgb(255, 255, 255);
+            background: rgb(0, 255, 255);
+        }
+        /* alpha define o nivel de transparência, onde vai de 0 a 1 */ 
+        #rgba {
+            color: rgba(255, 100, 50, 0.5);
+        }
+        #hex {
+            color: #fff123;
+            background: #ff0000;
+        }
+        /* os dois ultimos digitos hexadecimal assim totalizando 8 digitos define a transparência da cor */ 
+        #hex-transparencia {
+            color: #0000FF40;
+        }
+        /* HSL - Hue(matiz), saturation(saturação), lightness(luminosidade) */
+        /*
+            - matiz:
+            <> 0 ou 360 é vermelho
+            <> 120 é verde
+            <> 240 é azul
+            - saturação:
+            <> 0 um tom de cinza
+            <> 100% cor total
+            - luminosidade:
+            <> 0 é preto
+            <> 100 é branco
+        */
+        #hsl {
+            color: hsl(120, 100% , 50%);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Cores</h1>
+    <p>Existem várias formas de definirmos cores utilizando o CSS. Elas são:</p>
+    <ul>
+        <li id="pre-definidas">Cores pré-definidas</li>
+        <li id="current-color">Paralavra-chave "currentcolor"</li>
+        <li id="hex">Hexadecimal</li>
+        <li id="hex-transparencia">Hexadecimal com transparencia</li>
+        <li id="rgb">RGB</li>
+        <li id="rgba">RGBA</li>
+        <li id="hsl">HSL</li>
+        <li id="hsla">HSLA</li>
+    </ul>
+</body>
+</html>

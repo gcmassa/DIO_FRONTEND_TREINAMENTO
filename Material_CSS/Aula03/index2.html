@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Detalhes 02 - Imagens</title>
+    <style>
+        div {
+            width: 200px;
+            height: 300px;
+            border: 5px solid blue;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            
+        }
+        #contain {
+            object-fit: contain;
+        }
+        #cover {
+            object-fit: cover;
+        }
+        #none {
+            object-fit: none;
+        }
+        #scale-down {
+            object-fit: scale-down;
+        }
+        #position {
+            object-fit: cover;
+            object-position: 30px 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>object-fit</code></h1>
+
+    <code>object-fit: fill;</code> (padrão)
+    <div>
+        <img src="./assets/img/logo-full-DIO.webp" id="fill" alt="">
+    </div>
+
+    <br>
+
+    <code>object-fit: contain;</code>
+    <div>
+        <img src="./assets/img/logo-full-DIO.webp" id="contain" alt="">
+    </div>
+    
+    <br>
+
+    <code>object-fit: cover;</code>
+    <div>
+        <img src="./assets/img/logo-full-DIO.webp" id="cover" alt="">
+    </div>
+
+    <br>
+
+    <code>object-fit: none;</code>
+    <div>
+        <img src="./assets/img/logo-full-DIO.webp" id="none" alt="">
+    </div>
+    
+    <br>
+
+    <code>object-fit: scale-down;</code>
+    <div>
+        <img src="./assets/img/logo-full-DIO.webp" id="scale-down" alt="">
+    </div>
+
+    <br>
+
+    <h1>Propriedade <code>object-position</code></h1>
+    <!-- aceita valores negativos e palavras reservadas (left, right, top, center, bottom, start, end etc)-->
+    <code>object-position: 30px 40px;</code>
+    <div>
+        <img src="./assets/img/codificacao-de-programas-de-computador-no-ecra_53876-138060.jpg" id="position" alt="">
+    </div>
+    
+</body>
+</html>
