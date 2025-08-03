@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* Tamando de borda, estilo de borda, cor da borda, propriedade border*/
+
+.exemplo {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-width: thick 60px 20px 10px;
+}
+
+.exemplo-01 {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    border-width: 10px;
+    border-style: double dotted solid groove;
+}
+
+.exemplo-02 {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: orangered red yellow blue;
+}
+
+.exemplo-03 {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    /*border-width: 10px;
+    border-style: solid;
+    border-color: magenta;*/
+    border: 10px solid magenta;
+    border-bottom: 5px dashed red;
+}
+
+/* Arredondamento de Bordas */
+.exemplo-04 {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    border: 5px solid orange;
+
+    border-radius: 10px 40px;
+}
+
+/* Propriedade border image source*/
+.exemplo-05 {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border:  30px solid;
+    margin: 50px auto;
+}
+
+#exemplo-1 {
+    border-image-source: url(../img/codificacao-de-programas-de-computador-no-ecra_53876-138060.jpg);
+    border-image-repeat: round;
+    /*border-image-slice: 175 fill;*/
+    border-image-slice: 175;
+    /*border-image-width: 40px;*/
+    border-image-outset: 1;
+}
+#exemplo-2 {
+    border-image-source: linear-gradient(red, blue);
+    border-image-slice: 10;
+    border-image-outset: 110px;
+}
+
+#exemplo-resumido {
+    /* image source / image slice / image width / image outset <espaço> image repeat; */
+    border-image: url(../img/logo-full-DIO.webp) 169 / 10px 20px / 1 round;
+}

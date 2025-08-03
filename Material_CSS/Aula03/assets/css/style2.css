@@ -1,0 +1,47 @@
+/** {
+    font-family: 'Courier New', Courier, monospace;
+}*/
+/*
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/static/Roboto-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/static/Roboto-BoldItalic.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: RobotoIT;
+    src: url(../fonts/Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+    font-family: Roboto;
+}
+
+h1 {
+    font-family: RobotoIT;
+}
+
+p {
+    font-family: Roboto;
+    font-weight: bold;
+}*/
+@import url("../css/global.css");
+
+* {
+    font-family: Roboto;
+}
+/*
+p {
+    font-weight: bold;
+    font-style: italic;
+}*/
+
+code {
+    background-color: aqua ;
+}
